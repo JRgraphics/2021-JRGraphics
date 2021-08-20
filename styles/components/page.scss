@@ -1,0 +1,27 @@
+.page {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.main-container {
+  display: flex;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.gallery {
+  background: url('~/assets/images/abstract2.jpg');
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  &__header {
+    animation-delay: 1s;
+    filter: brightness(0);
+    max-height: 18vh;
+    max-width: 40vw;
+    -webkit-filter: brightness(0);
+  }
+}

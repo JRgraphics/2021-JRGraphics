@@ -1,0 +1,41 @@
+.button {
+  color: #fff;
+  font-family: 'Georama', sans-serif;
+  outline: none;
+  transform: scale(1);
+  transition: all 0.2s ease;
+  &--transparent {
+    background: transparent;
+    border: none;
+  }
+  &__close {
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  &:active {
+    transform: scale(0.8);
+  }
+  // &:hover {
+  //   animation: fade-loop 1s ease-in-out forwards infinite;
+  //   cursor: pointer;
+  // }
+  .icon {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@keyframes fade-loop {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
